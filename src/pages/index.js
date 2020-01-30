@@ -122,7 +122,7 @@ const IndexPage = () => (
         </div>
         <div className={"forming"}>
             <div className={"container"}>
-                <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+                <form name="fatfreeze" method="post" netlify-honeypot="bot-field" data-netlify="true">
                 
                 <label>
                     Email
