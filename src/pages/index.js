@@ -120,6 +120,23 @@ const IndexPage = () => (
                 </div>
             </div>
         </div>
+        <div className={"forming"}>
+            <div className={"container"}>
+                <form method="post" action="#" netlify-honeypot="bot-field" data-netlify="true">
+                
+                <label>
+                    Email
+                    <input type="email" name="email" />
+                </label>
+                <label>
+                    Name
+                    <input type="text" name="name" />
+                </label>
+                    <button type="submit">Submit</button>
+                    <input type="hidden" name="bot-field" />
+                </form>
+            </div>
+        </div>
     </Layout>
 )
 
