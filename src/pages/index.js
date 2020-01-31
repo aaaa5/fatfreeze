@@ -8,6 +8,8 @@ import thumbnailBoard from "../../static/images/feature-board.png"
 import thumbnailNews from "../../static/images/feature-news.png"
 import thumbnailTeams from "../../static/images/feature-team.png"
 import thumbnailStaff from "../../static/images/feature-user.png"
+import React from "react"
+import DummyForm from "../components/dummyForm"
 
 const IndexPage = () => (
     <Layout>
@@ -122,20 +124,7 @@ const IndexPage = () => (
         </div>
         <div className={"forming"}>
             <div className={"container"}>
-                <form name="fatfreeze" method="post" netlify-honeypot="bot-field" data-netlify="true">
-                
-                <label>
-                    Emailі
-                    <input type="email" name="email" />
-                </label>
-                <label>
-                    Name
-                    <input type="text" name="name" />
-                </label>
-                <input type="hidden" name="bot-field" />
-                <button type="submit">Submit</button>
-                    
-                </form>
+                <DummyForm/>
             </div>
         </div>
     </Layout>
