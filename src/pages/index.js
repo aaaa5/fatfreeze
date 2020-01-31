@@ -8,7 +8,6 @@ import thumbnailBoard from "../../static/images/feature-board.png"
 import thumbnailNews from "../../static/images/feature-news.png"
 import thumbnailTeams from "../../static/images/feature-team.png"
 import thumbnailStaff from "../../static/images/feature-user.png"
-import React from "react"
 import DummyForm from "../components/dummyForm"
 
 const IndexPage = () => (
