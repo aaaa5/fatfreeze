@@ -121,6 +121,19 @@ const IndexPage = () => (
                 </div>
             </div>
         </div>
+        <div className={"swipeView"}>
+            <div className={"carousel"}>
+                <p>
+                    Very professional in how they manage customers and look after them. Even if there's a slight mishap they are quick to fix the problem and their professionalism is superb.
+                </p>
+            </div>
+            <div className={"carousel"}>
+                <p>
+                    Very professional in how they manage customers and look after them. Even if there's a slight mishap they are quick to fix the problem and their professionalism is superb.
+                </p>
+            </div>
+        </div>
+
         <div className={"forming"}>
             <div className={"container"}>
                 <DummyForm/>
