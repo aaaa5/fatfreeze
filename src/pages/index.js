@@ -132,8 +132,9 @@ const IndexPage = () => (
                     Name
                     <input type="text" name="name" />
                 </label>
-                    <button type="submit">Submit</button>
-                    <input type="hidden" name="bot-field" />
+                <input type="hidden" name="bot-field" />
+                <button type="submit">Submit</button>
+                    
                 </form>
             </div>
         </div>
