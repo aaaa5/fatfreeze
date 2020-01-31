@@ -125,7 +125,7 @@ const IndexPage = () => (
                 <form name="fatfreeze" method="post" netlify-honeypot="bot-field" data-netlify="true">
                 
                 <label>
-                    Email
+                    Emailі
                     <input type="email" name="email" />
                 </label>
                 <label>
