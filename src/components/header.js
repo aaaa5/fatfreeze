@@ -2,6 +2,7 @@ import {Link} from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../../static/images/logo.svg"
+import Call from "../../static/images/phone-call.svg"
 
 const Header = ({siteTitle}) => (
     <header>
@@ -14,7 +15,7 @@ const Header = ({siteTitle}) => (
                 </div>
 
                 <div className={"get-started"}>
-                    <a href={"https://app.histaff.io"}>Get Started</a>
+                    <a href={"tel:800757-4026"}><img alt={"Call"} src={Call}/><span>(800) 757-4026</span></a>
                 </div>
             </div>
         </div>

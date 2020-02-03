@@ -7,23 +7,32 @@ export default () => (
     action="/success"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
-  >
+  > 
+    <h3>REQUEST AN APPOINTMENT</h3>
     <input type="hidden" name="bot-field" />
     <div>
       <label htmlFor="name">Name</label>
-      <input type="text" name="name" id="name" />
+      <input type="text" name="name" id="name" required/>
     </div>
     <div>
       <label htmlFor="email">Email</label>
-      <input type="text" name="email" id="email" />
+      <input type="text" name="email" id="email" required/>
     </div>
     <div>
-      <label htmlFor="message">Message</label>
-      <textarea name="message" id="message" rows="6" required />
+      <label htmlFor="phone">Phone</label>
+      <input type="text" name="phone" id="phone" required/>
     </div>
     <div>
-      <input type="submit" value="Drop a line" />
-      <input type="reset" value="Eraser" />
+      <label htmlFor="location">Select Location</label>
+      <select name="location" required  >
+        <option value="" selected="selected">-</option>
+        <option value="Downtown NYC Location">Downtown NYC Location</option>
+        <option value="Central Park South Location">Central Park South Location</option>
+        <option value="Hewlett Long Island">Hewlett Long Island</option>
+      </select>
+    </div>
+    <div>
+      <input type="submit" value="MAKE AN APPOINTMENT" />
     </div>
   </form>
 )

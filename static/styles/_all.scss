@@ -1,24 +1,127 @@
-$break-small: 719px;
+
 
 body {
   font-family: Inter;
   color: #797283;
 
+  .mobile {
+    @media screen and (min-width: $break-small){
+      display: none;
+    }
+    @media screen and (max-width: $break-small){
+      display: block;
+    }
+  }
+
+  .desktop {
+    @media screen and (min-width: $break-small){
+      display: block;
+    }
+    @media screen and (max-width: $break-small){
+      display: none;
+    }
+  }
+
+
+
   p {
     font-family: Inter;
+    text-align: justify;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: PT Serif;
     line-height: 43px;
-    color: #1E1C21;
+    color: $mainColor;
+  }
+
+  h3 {
+    line-height: 32px;;
   }
 
   a {
-    color: #8953B7;
+    color: $mainColor;
 
     &:hover, &:active {
-      color: #8953b7;
+      color: $mainColor;
+    }
+  }
+
+  li{
+    line-height: 30px;
+  }
+
+  
+  form {
+    border-radius: 5px;
+    background: #fff;
+    padding:25px;
+    box-shadow: 0 0 50px #e0d8e6;
+    text-align: center;
+    
+    label {
+      text-align: left;
+      display: block;
+    }
+    
+    h3 {
+      font-size: 25px;
+      text-align: center;
+      margin-top:0;
+      color: $secondaryColor !important;
+    }
+
+    input[type="text"],
+    select {
+      display: block;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      padding: 4px;
+      width: 220px;
+      height: 32px;
+      border: none;
+      border-bottom: 1px solid #AAA;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      transition: 0.2s ease;
+      background:transparent;
+      width:100%;
+      outline: none;
+    }
+  
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-bottom: 2px solid $mainColor;
+      color: $mainColor;
+      transition: 0.2s ease;
+    }
+  
+    input[type="submit"] {
+      margin-top: 28px;
+      display: inline-block;
+      padding: 15px 10px;
+      background: $mainColor;
+      border: none;
+      border-radius: 2px;
+      color: #FFF;
+      font-size: 20px;
+      text-transform: uppercase;
+      transition: 0.1s ease;
+      cursor: pointer;
+    }
+  
+    input[type="submit"]:hover,
+    input[type="submit"]:focus {
+      opacity: 0.8;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      transition: 0.1s ease;
+    }
+  
+    input[type="submit"]:active {
+      opacity: 1;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      transition: 0.1s ease;
     }
   }
 
@@ -26,11 +129,15 @@ body {
     background-color: #FDFAFF;
     display: block;
     padding: 39px 0;
+    margin-top: -22px;
+    @media screen and (min-width: $break-small){
+      margin-top: 0px;
+    }
 
     .logo {
       img {
-        width: 151px;
-        height: 44px;
+        width: 222px;
+        height: 65px;
       }
     }
 
@@ -40,17 +147,39 @@ body {
 
       .get-started {
         a {
-          width: 160px;
-          height: 47px;
           font-style: normal;
           font-weight: bold;
           font-size: 16px;
           line-height: 47px;
           display: block;
-          background: #8953B7;
-          border-radius: 4px;
           text-align: center;
           color: #FFFFFF;
+          @media screen and (min-width: $break-small){
+            display: flex;
+          }
+          img {
+            height: 20px;
+            display: block;
+            padding: 12px;
+            border-radius: 38%;
+            background: $mainColor;
+            @media screen and (min-width: $break-small){
+              display: inline-block;
+              margin-right: 10px;
+            }
+          }
+
+          span {
+            display: none;
+            @media screen and (min-width: $break-small){
+              display: inline;
+              color: $mainColor;
+              font-size: 30px;
+              font-weight: 100; 
+            }
+          }
+
+          
         }
       }
     }
@@ -58,25 +187,37 @@ body {
 
   .page-header {
     text-align: center;
-    padding: 100px 0 100px 0;
+    padding: 50px 0 150px 0;
     background-color: #fdfaff;
-    border-radius: 0px 0px 40px 40px;
+    
+    @media screen and (min-width:$break-small) {
+      text-align: left;
+    }
+
+    img.mobile {
+      max-width: 70%;
+      margin:0 auto;
+    }
 
     h1 {
       font-style: normal;
       font-weight: bold;
       font-size: 48px;
-      color: #1E1C21;
+      color: $mainColor;
       padding: 0 0 15px 0;
       line-height: 54px;
     }
 
     h2 {
-      font-size: 36px;
+      font-size: 32px;
       font-style: normal;
       font-weight: bold;
-      color: #1E1C21;
+      color: $secondaryColor;
       line-height: 54px;
+    }
+
+    h3 {
+      color: #1E1C21;
     }
 
     p {
@@ -84,6 +225,7 @@ body {
       font-weight: normal;
       font-size: 20px;
       line-height: 34px;
+      color: $secondaryColor;
     }
 
     img {
@@ -104,11 +246,17 @@ body {
       }
 
       img {
-        max-width: 80%;
+        width:100%;
+        max-width: 100%; 
       }
     }
   }
-
+  .featureImage {
+    width: 100%;
+    @media screen and (min-width:$break-small) {
+      margin-top:-25%
+    }
+  }
   .features {
     .feature__item {
       padding: 50px 0;
@@ -128,10 +276,11 @@ body {
         flex-direction: column;
 
         h2 {
-          font-size: 36px;
+         
           font-weight: bold;
           margin-bottom: 15px;
           color: #1E1C21;
+          line-height: 32px;
         }
 
         p {
@@ -169,10 +318,23 @@ body {
   }
 
   .call-to-action {
-    background-color: #8953B7;
+    background-color: $mainColor;
     color: #ffffff;
     padding: 65px 0;
     border-radius: 40px 40px 0px 0px;
+
+    h3 {
+      color:#fff;
+      font-size: 20px;
+      line-height: 45px;
+      padding: 30px;
+      text-align: left;
+      span{
+        text-align: right;
+        display: block;
+        font-size: 15px;
+      }
+    }
 
     .container {
       display: flex;
@@ -210,7 +372,7 @@ body {
         justify-content: center;
         font-weight: bold;
         flex-direction: column;
-        color: #8953B7;
+        color: $mainColor;
 
         @media screen and (max-width: $break-small) {
           margin: 0 auto;
@@ -294,7 +456,7 @@ body {
       text-align: center;
 
       h2 {
-        font-size: 36px;
+        font-size: 32px;
       }
     }
 
@@ -351,14 +513,14 @@ body {
               color: #797283;
 
               &:hover, &:active {
-                color: #8953b7;
+                color: $mainColor;
               }
             }
           }
         }
 
         .links__special {
-          background-color: #8953b7;
+          background-color: $mainColor;
           color: #ffffff;
           border-radius: 4px;
           padding: 2px 5px;
