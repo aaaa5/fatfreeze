@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import featureImage from "../../static/images/Bg.png";
@@ -26,7 +26,7 @@ const IndexPage = () => (
                         <h3>COOLSCULPTING – A REVOLUTIONARY WAY TO WAVE GOODBYE TO UNWANTED FAT!</h3>                            
                     </div>
                     <div className={"col-6"}>
-                    <div className={"formа"}>
+                    <div className={"formа"} id={"forma"}>
                         <DummyForm/>
                     </div>
                     </div>
@@ -164,7 +164,7 @@ CoolSculpting – A non-surgical and natural way to minimize stubborn fat. CoolS
                 </div>
 
                 <div className={"button"}>
-                    <a href="https://app.histaff.io" target={"_blank"}>MAKE AN APPOINTMENT</a>
+                    <Link to="/#forma" >MAKE AN APPOINTMENT</Link>
                 </div>
             </div>
         </div>
@@ -180,7 +180,6 @@ CoolSculpting – A non-surgical and natural way to minimize stubborn fat. CoolS
                 </p>
             </div>
         </div>
-
         
     </Layout>
 )

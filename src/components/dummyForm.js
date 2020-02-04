@@ -11,7 +11,11 @@ export default () => (
     <h3>REQUEST AN APPOINTMENT</h3>
     <input type="hidden" name="bot-field" />
     <div>
-      <label htmlFor="name">Name</label>
+      <label htmlFor="FirstName">First Name</label>
+      <input type="text" name="FirstName" id="name" required/>
+    </div>
+    <div>
+      <label htmlFor="LastName">Last Name</label>
       <input type="text" name="name" id="name" required/>
     </div>
     <div>

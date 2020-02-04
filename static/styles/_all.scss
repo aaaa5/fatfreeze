@@ -1,4 +1,7 @@
-
+/* css */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Inter;
@@ -35,8 +38,12 @@ body {
     color: $mainColor;
   }
 
+  h1 {
+      margin-bottom: -22px;
+  }
+
   h3 {
-    line-height: 32px;;
+    line-height: 33px;;
   }
 
   a {
@@ -65,10 +72,11 @@ body {
     }
     
     h3 {
-      font-size: 25px;
+      font-size:23px;
       text-align: center;
       margin-top:0;
-      color: $secondaryColor !important;
+      margin-bottom: 40px;
+      
     }
 
     input[type="text"],
@@ -254,7 +262,7 @@ body {
   .featureImage {
     width: 100%;
     @media screen and (min-width:$break-small) {
-      margin-top:-25%
+      margin-top:-30%
     }
   }
   .features {
@@ -321,7 +329,6 @@ body {
     background-color: $mainColor;
     color: #ffffff;
     padding: 65px 0;
-    border-radius: 40px 40px 0px 0px;
 
     h3 {
       color:#fff;
@@ -473,6 +480,7 @@ body {
   }
 
   footer {
+    display: none;
     padding: 120px 0 45px;
 
     @media screen and (max-width: $break-small) {
@@ -573,7 +581,8 @@ body {
 }
 
 .swipeView {
-  display: grid;
+  display: none;
+  //display: grid;
   grid-template-columns: repeat(4, 100%);
   will-change: transform;
   align-content: center;
