@@ -3,7 +3,7 @@ module.exports = {
         title: `CoolSculpting Deals NYC, Best CoolSculpting Freeze Fat`,
         description: `CoolSculptng treatment in Manhattan New York - fat reduction technology that freezes your fat.Call (800) 757-4026 for FREE consult. CoolSculpting deals NYC`,
         author: `Trifecta Med Spa NYC`,
-    },1
+    },
     plugins: [
         `gatsby-plugin-react-helmet`,
         {
