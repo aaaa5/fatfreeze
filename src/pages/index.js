@@ -14,7 +14,7 @@ import DummyForm from "../components/dummyForm"
 
 const IndexPage = () => (
     <Layout>
-        <SEO title="Make your Staff and Workspace Happy"/>
+        <SEO title="CoolSculpting Deals NYC, Best CoolSculpting Freeze Fat"/>
 
         <div className={"page-header home"}>
             <div className={"container"}>
