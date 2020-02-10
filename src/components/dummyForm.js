@@ -28,8 +28,8 @@ export default () => (
       <input type="text" name="phone" id="phone" required/>
     </div>
     <div>
-      <label htmlFor="locationName">Select Location</label>
-      <select name="locationName" required  >
+      <label htmlFor="location">Select Location</label>
+      <select name="location" required  >
         <option value="" selected="selected">-</option>
         <option value="Downtown NYC Location">Downtown NYC Location</option>
         <option value="Central Park South Location">Central Park South Location</option>
