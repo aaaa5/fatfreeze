@@ -50,12 +50,12 @@ const Layout = ({children}) => (
                         <div className={"col-2"}>
                             <div className={"widget__item"}>
                                 <ul className={"links"}>
-                                    <h4>HiStaff</h4>
+                                    <h4>Trifecta Med Spa</h4>
                                     <ul>
                                         <li><Link to="/integrations/slack" title={"Integrations"}>Integrations</Link></li>
                                         <li><Link to="/about" title={"About Us"}>About</Link></li>
-                                        <li><a href={"https://histaff.io/blog"}>Blog</a></li>
-                                        <li><a className={"links__special"} href={"https://feedback.histaff.io/"} target={"_blank"} title={"We look forward to receiving your great feedback"}>Feedback</a></li>
+                                        <li><a href={"https://Trifecta Med Spa.io/blog"}>Blog</a></li>
+                                        <li><a className={"links__special"} href={"https://feedback.Trifecta Med Spa.io/"} rel="noopener noreferrer" target={"_blank"} title={"We look forward to receiving your great feedback"}>Feedback</a></li>
                                     </ul>
                                 </ul>
                             </div>
@@ -77,17 +77,17 @@ const Layout = ({children}) => (
                         <div className={"col-3"}>
                             <div className={"widget__item"}>
                                 <div className={"social"}>
-                                    <a href="https://twitter.com/histaffio" target={"_blank"} title={"Twitter"}><img alt={"Twitter"} src={iconTwitter}/></a>
-                                    <a href="https://www.linkedin.com/company/histaff/" target={"_blank"} title={"LinkedIn"}><img alt={"LinkedIn"} src={iconLinkedin}/></a>
-                                    <a href="https://github.com/histaff" target={"_blank"} title={"GitHub"}><img alt={"GitHub"} src={iconGitHub}/></a>
-                                    <a href="https://www.instagram.com/histaff.io/" target={"_blank"} title={"Instagram"}><img alt={"Instagram"} src={iconInstagram}/></a>
+                                    <a href="https://twitter.com/Trifecta Med Spaio" target={"_blank"} rel="noopener noreferrer" title={"Twitter"}><img alt={"Twitter"} src={iconTwitter}/></a>
+                                    <a href="https://www.linkedin.com/company/Trifecta Med Spa/" target={"_blank"} rel="noopener noreferrer" title={"LinkedIn"}><img alt={"LinkedIn"} src={iconLinkedin}/></a>
+                                    <a href="https://github.com/Trifecta Med Spa" rel="noopener noreferrer" target={"_blank"} title={"GitHub"}><img alt={"GitHub"} src={iconGitHub}/></a>
+                                    <a href="https://www.instagram.com/Trifecta Med Spa.io/" rel="noopener noreferrer" target={"_blank"} title={"Instagram"}><img alt={"Instagram"} src={iconInstagram}/></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className={"copyright"}>
-                        <p>Copyright {new Date().getFullYear()}, {` `} <a href="https://histaff.io" title={"HiStaff"}>HiStaff</a>. All rights reserved.</p>
+                        <p>Copyright {new Date().getFullYear()}, {` `} <a href="https://trifectamedspanyc.com" title={"Trifecta Med Spa"}>Trifecta Med Spa</a>. All rights reserved.</p>
                     </div>
                 </div>
             </footer>

@@ -12,11 +12,11 @@ export default () => (
     <input type="hidden" name="bot-field" />
     <div>
       <label htmlFor="FirstName">First Name</label>
-      <input type="text" name="FirstName" id="name" required/>
+      <input type="text" name="FirstName" id="FirstName" required/>
     </div>
     <div>
       <label htmlFor="LastName">Last Name</label>
-      <input type="text" name="name" id="name" required/>
+      <input type="text" name="LastName" id="LastName" required/>
     </div>
     <div>
       <label htmlFor="email">Email</label>
