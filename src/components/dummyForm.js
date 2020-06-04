@@ -6,7 +6,6 @@ export default () => (
     method="post"
     action="/success"
     data-netlify="true"
-    data-netlify-honeypot="bot-field"
     data-netlify-recaptcha="true"
   > 
     <input type="hidden" name="form-name" value="contact" />
