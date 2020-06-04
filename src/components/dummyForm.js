@@ -37,6 +37,7 @@ export default () => (
         <option value="Hewlett Long Island">Hewlett Long Island</option>
       </select>
     </div>
+    <div data-netlify-recaptcha="true"></div>
     <div>
       <input type="submit" value="MAKE AN APPOINTMENT" />
     </div>
