@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "AVT",
   "dependencies": {
-    "gatsby": "^2.19.12",
+    "gatsby": "^4.25.7",
     "gatsby-cli": "^2.7.47",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-gtag": "^1.0.12",
